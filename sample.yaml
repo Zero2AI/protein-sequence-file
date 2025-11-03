@@ -7,7 +7,7 @@ entities:
         id: designed_binder
         sequence_length: [40, 80]
   - file:
-      path: 1g13.cif
+      path: 1G13.cif
       include: 
         - chain:
             id: A
