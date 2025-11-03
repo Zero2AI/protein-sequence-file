@@ -1,19 +1,18 @@
 entities:
-    - protein:
-        id: target_protein
-        sequence:
-  "GQTLRFQCRCLCVLTASLAVALALALSEQEVDVDVGNMGGDKSPIFCPGLSARANLACQTDGRCCHSMLRGNTMVHQLGDMAYDALLHITGLVDDGLLQVPAGPSIGDSDDDQRCACFIGDGSLCSKDGHGDVQGLQALADLAGQKEFKKQGNLSTL
+  - protein:
+      id: target_protein
+      sequence: "GQTLRFQCRCLCVLTASLAVALALALSEQEVDVDVGNMGGDKSPIFCPGLSARANLACQTDGRCCHSMLRGNTMVHQLGDMAYDALLHITGLVDDGLLQVPAGPSIGDSDDDQRCACFIGDGSLCSKDGHGDVQGLQALADLAGQKEFKKQGNLSTL
   CKLVEGSRSEGSIIVPPYLFLLDHYHQGRGKAPMVSLLSTFCNYRDTKNLQDYLKAAQKKFCQVFHFGEQLVESLVNPKTNTGYFRLTTKLRDMLIDGVYGATFLLGFPKTAHDAALGVVLGKGRQLF"
+  
+  - protein:
+      id: designed_binder
+      design:
+        total_len:
+          min: 40
+          max: 80
 
-    - protein:
-        id: designed_binder
-        design:
-          total_len:
-            min: 40
-            max: 80
-
-    - file:
-        path: 1G13.cif
-        include:
-          - chain:
-              id: A
+  - file:
+      path: 1G13.cif
+      include:
+        - chain:
+            id: A
